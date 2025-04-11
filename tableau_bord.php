@@ -6,7 +6,7 @@ if (!isset($_SESSION['admin'])) {
 }
 require_once 'include/connexion.php';
 
-// Pour affichage rapide de stats si tu veux plus tard
+// Pour affichage rapide de stats
 $nb_etudiants = $pdo->query("SELECT COUNT(*) FROM Etudiant")->fetchColumn();
 $nb_enseignants = $pdo->query("SELECT COUNT(*) FROM Enseignant")->fetchColumn();
 $nb_soutenances = $pdo->query("SELECT COUNT(*) FROM Soutenance")->fetchColumn();
